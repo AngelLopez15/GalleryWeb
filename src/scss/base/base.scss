@@ -1,0 +1,11 @@
+body{
+  background-color: #222;
+  color: #ccc;
+  min-height: 100vh;
+  // para llamar los estilos del mixin se usa la palabra include y el nombre del mixin
+  @include laptop{
+    display: grid;
+    grid-template-columns: 15% 85%;
+    grid-template-rows: 60px 1fr;
+  }
+}
