@@ -12,11 +12,11 @@ html(lang="en")
       a(href="/")
         img(src="./images/logotipo.png", alt="logotipo").logo
       //-para poner divs no es necesario poner la etiqueta 
-      .topbar
-        .topbar__icon
+      #topbar.topbar
+        .topbar__icon(data-type='login')
           i.fas.fa-user
           span Login
-        .topbar__icon
+        .topbar__icon(data-type='register')
           i.fas.fa-user-plus
           span Register
         .toggle-menu
@@ -27,5 +27,7 @@ html(lang="en")
     #sidebar.sidebar
       block menu
     main.main
+    include ../includes/login-modal
+    include ../includes/register-modal
     script(src="js/scripts-min.js")
     footer

@@ -4,14 +4,14 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"/>
-    <link rel="stylesheet" href="css/styles.css?t=1600148377134"/>
+    <link rel="stylesheet" href="css/styles.css?t=1600208249026"/>
     <title>Gallery</title>
   </head>
   <body>
     <header class="header" id="header"><a href="/"><img class="logo" src="./images/logotipo.png" alt="logotipo"/></a>
-      <div class="topbar">
-        <div class="topbar__icon"><i class="fas fa-user"></i><span>Login</span></div>
-        <div class="topbar__icon"><i class="fas fa-user-plus"></i><span>Register</span></div>
+      <div class="topbar" id="topbar">
+        <div class="topbar__icon" data-type="login"><i class="fas fa-user"></i><span>Login</span></div>
+        <div class="topbar__icon" data-type="register"><i class="fas fa-user-plus"></i><span>Register</span></div>
         <div class="toggle-menu">
           <div class="toggle-menu__icon" id="toggle-menu">
             <div class="first-bar"></div>
@@ -34,7 +34,45 @@
       </nav>
     </div>
     <main class="main"></main>
-    <script src="js/scripts-min.js?t=1600148377134"></script>
+    <div class="lightbox" id="login-modal">
+      <form class="form" id="login-form">
+        <div class="form__field">
+          <label class="form__label" for="login-email">Email</label>
+          <input class="form__input" type="email" name="email" id="login-email"/>
+        </div>
+        <div class="form__field">
+          <label class="form__label" for="login-password">Password</label>
+          <input class="form__input" type="password" name="password" id="login-password"/>
+        </div>
+        <div class="form__field">
+          <input class="form__submit" type="submit" name="button" value="Send"/>
+        </div>
+      </form>
+    </div>
+    <div class="lightbox" id="register-modal">
+      <form class="form" id="register-form">
+        <div class="form__field">
+          <label class="form__label" for="register-name">Name</label>
+          <input class="form__input" type="name" name="name" id="register-email"/>
+        </div>
+        <div class="form__field">
+          <label class="form__label" for="register-email">Email</label>
+          <input class="form__input" type="email" name="email" id="register-email"/>
+        </div>
+        <div class="form__field">
+          <label class="form__label" for="register-password">Password</label>
+          <input class="form__input" type="password" name="password" id="register-password"/>
+        </div>
+        <div class="form__field">
+          <label class="form__label" for="register-passwordConfirm">Confirm Password</label>
+          <input class="form__input" type="password" name="passwordConfirm" id="register-passwordConfirm"/>
+        </div>
+        <div class="form__field">
+          <input class="form__submit" type="submit" name="button" value="Send"/>
+        </div>
+      </form>
+    </div>
+    <script src="js/scripts-min.js?t=1600208249026"></script>
     <footer></footer>
   </body>
 </html>
