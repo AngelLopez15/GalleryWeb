@@ -1,0 +1,17 @@
+.logo{
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0.3rem;
+  left: 0.3rem;
+  z-index: 10;
+
+  @include laptop{
+    position: absolute;
+    left: 3.2%;
+    top: 2rem;
+    width: 8%;
+  }
+}

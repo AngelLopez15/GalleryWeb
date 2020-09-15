@@ -1,0 +1,34 @@
+.topbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 50px;
+  background-color: #666;
+  padding-left: 60px;
+
+  &__icon{
+    width: 90px;
+    display: flex;
+    justify-content: space-around;
+  }
+  // todas las propiedades que no escribamos se heredan tal cual al siguiente nivel
+  // Si volvemos a poner una propiedad que existe entonces se sobreescribe para ese tamaño
+  @include laptop{
+    height: 60px;
+    left: 100%;
+    width: 35vw;
+    justify-content: space-evenly;
+    transform: translate(-100%);
+    background-color: transparent;
+  }
+
+  @include desktop {
+    width: 15vw;
+  }
+
+}

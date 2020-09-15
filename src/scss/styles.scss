@@ -1,6 +1,12 @@
+// El orden de la importacion es muy importante por temas de la cascada
 @import 'mixins/breakpoints';
+
 @import 'base/normalize';
 @import 'base/base';
+
 @import 'blocks/header';
+@import 'blocks/topbar';
+@import 'blocks/toggle-menu';
+@import 'blocks/logo';
 @import 'blocks/aside';
 @import 'blocks/main';
