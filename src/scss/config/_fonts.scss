@@ -1,0 +1,12 @@
+// Para una web se suele usar dos tipos de fuentes una para los titulos y otra para los textos
+// La fuente de los titulos suele ser llamativa
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
+$main-title:'Montserrat';
+$big-title:600;
+$regular-title:400;
+
+// Para los textos normales debe ser una fuente amigable para la lectura
+@import url('https://fonts.googleapis.com/css?family=Cabin:400,600');
+$main-font:'Cabin';
+$font-regular:400;
+$font-bold:600;

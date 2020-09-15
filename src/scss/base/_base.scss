@@ -1,7 +1,9 @@
 body{
-  background-color: #222;
-  color: #ccc;
+  background-color: $background-color;
+  color: $text-color;
   min-height: 100vh;
+  font-family: $main-font, 'sans-serif';
+
   // para llamar los estilos del mixin se usa la palabra include y el nombre del mixin
   @include laptop{
     display: grid;

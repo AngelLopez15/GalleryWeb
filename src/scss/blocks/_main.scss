@@ -1,6 +1,6 @@
 .main{
   @include laptop {
-    background-color: #000;
+    background-color: $background-color;
     grid-column: 2 / 3;
     grid-row: 2/ 3;
   }

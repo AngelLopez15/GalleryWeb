@@ -1,10 +1,18 @@
 // El orden de la importacion es muy importante por temas de la cascada
+
+// gias de estilo
+@import 'config/colors.scss';
+@import 'config/fonts';
+
+// mixins
 @import 'mixins/breakpoints';
 @import 'mixins/reset-list.scss';
 
+// estilos base
 @import 'base/normalize';
 @import 'base/base';
 
+// bloques
 @import 'blocks/header';
 @import 'blocks/topbar';
 @import 'blocks/toggle-menu';
