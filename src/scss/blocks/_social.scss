@@ -1,0 +1,40 @@
+.social{
+  width: 80%;
+  // background-color: red;
+  position: absolute;
+  bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  height: 2rem;
+  // Con las siguientes dos lineas centramos la caja cuando se tiene posion absoluta
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+
+  @include laptop{
+    width: 30%;
+  }
+
+
+  &__icon{
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: transform .3s;
+  
+    & i{
+      align-items: center;
+    }
+
+    @include laptop{
+      &:hover{
+        transform: translateY(-100%);
+        & i:nth-child(2){
+          color: $primary-color;
+        }
+      }
+    }
+  }
+
+}

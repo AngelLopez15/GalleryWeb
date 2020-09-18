@@ -7,7 +7,8 @@ body{
   // para llamar los estilos del mixin se usa la palabra include y el nombre del mixin
   @include laptop{
     display: grid;
-    grid-template-columns: 15% 85%;
+    grid-template-columns: 10% 90%;
     grid-template-rows: 60px 1fr;
+    overflow: hidden;
   }
 }

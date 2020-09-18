@@ -20,12 +20,14 @@
   // todas las propiedades que no escribamos se heredan tal cual al siguiente nivel
   // Si volvemos a poner una propiedad que existe entonces se sobreescribe para ese tamaño
   @include laptop{
-    height: 60px;
+    height: 90px;
     left: 100%;
     width: 35vw;
     justify-content: space-evenly;
     transform: translate(-100%);
     background-color: transparent;
+    padding-left: 0;
+    padding-right: 1.5rem;
   }
 
   @include desktop {

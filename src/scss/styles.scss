@@ -22,3 +22,10 @@
 @import 'blocks/main';
 @import 'blocks/lightbox';
 @import 'blocks/forms';
+@import 'blocks/titles';
+@import 'blocks/social';
+
+// pages
+@import 'pages/gallery';
+@import 'pages/about';
+@import 'pages/contact.scss';

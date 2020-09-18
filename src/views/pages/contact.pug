@@ -1,3 +1,32 @@
 extends ../templates/template
 block menu
+  - pageActive = 'contact'
   include ../includes/main-menu
+block title
+  h1.title Contact
+block main
+  .contact
+    .contact__form
+      form.form-contact
+        .form-contact__fields
+          input(type="text" name='name' placeholder='Name' autocomplete='off').form-contact__input
+          input(type="email" name='email' placeholder='Email' autocomplete='off').form-contact__input
+          input(type="text" name='subjet' placeholder='Subjet' autocomplete='off').form-contact__input
+        .form-contact__field
+          textarea(name="message").form-contact__textarea
+      .form-contact__field
+        input(type="submit", value="send").form__submit
+    .contact__map
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60239.08776072446!2d-99.18743385650716!3d19.328280202334955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce002e11342fc3%3A0x9a2667d831d4e080!2sCoyoac%C3%A1n%2C%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1600394674433!5m2!1ses-419!2smx" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      a(href="https://www.google.com.mx/maps/place/Coyoac%C3%A1n,+Ciudad+de+M%C3%A9xico,+CDMX/@19.3282802,-99.1874339,13z/data=!3m1!4b1!4m5!3m4!1s0x85ce002e11342fc3:0x9a2667d831d4e080!8m2!3d19.3437444!4d-99.1561883" target='_blank')
+        img(src="./images/map.png", alt="mapa con la ubicacion del lugar").contact__img-map
+    .social
+      .social__icon
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-twitter"></i>
+      .social__icon
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-instagram"></i>
+      .social__icon
+        <i class="fab fa-youtube"></i>
+        <i class="fab fa-youtube"></i>

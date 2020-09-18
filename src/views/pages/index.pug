@@ -1,3 +1,42 @@
 extends ../templates/template
 block menu
+  - pageActive = 'home'
   include ../includes/main-menu
+block title
+  h1.title Home
+block main
+  #gallery.gallery
+    .gallery__item
+      img(src="./images/cafe.jpg", alt="foto de una taza de cafe")
+    .gallery__item
+      img(src="./images/cafe2.jpg", alt="foto de una taza de cafe")
+    .gallery__item
+      img(src="./images/cafe3.jpg", alt="foto de una taza de cafe")
+    .gallery__item
+      img(src="./images/mano.jpg", alt="foto de una mano agarrado tierra")
+    .gallery__item
+      img(src="./images/cafe.jpg", alt="foto de una taza de cafe")
+    .gallery__item
+      img(src="./images/cafe2.jpg", alt="foto de una taza de cafe")
+    .gallery__item
+      img(src="./images/cafe3.jpg", alt="foto de una taza de cafe")
+    .gallery__item
+      img(src="./images/mano.jpg", alt="foto de una mano agarrado tierra")
+    .gallery__item
+      img(src="./images/cafe.jpg", alt="foto de una taza de cafe")
+    .gallery__item
+      img(src="./images/cafe2.jpg", alt="foto de una taza de cafe")
+    .gallery__item
+      img(src="./images/cafe3.jpg", alt="foto de una taza de cafe")
+    .gallery__item
+      img(src="./images/mano.jpg", alt="foto de una mano agarrado tierra")
+    .gallery__item
+      img(src="./images/cafe.jpg", alt="foto de una taza de cafe")
+    .gallery__item
+      img(src="./images/cafe2.jpg", alt="foto de una taza de cafe")
+    .gallery__item
+      img(src="./images/cafe3.jpg", alt="foto de una taza de cafe")
+    .gallery__item
+      img(src="./images/mano.jpg", alt="foto de una mano agarrado tierra")
+block scripts
+  script(src="https://cdn.jsdelivr.net/npm/macy@2")

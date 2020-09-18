@@ -1,0 +1,51 @@
+.about{
+  .about__img img{
+    max-width: 100%;
+  }
+
+  @include laptop{
+    display: grid;
+    gap: .5rem;
+    position: relative;
+    height: 60vh;
+    grid-template-columns: 60% 40%;
+    align-items: center;
+    justify-items: center;
+    //  background-color: red;
+    &__img,
+    &__text{
+      position: absolute;
+      opacity: 0;
+      transition: 1s;
+      width: 50%;
+    }
+
+    &__img{
+      left: 0;
+      top: 0;
+    }
+
+    &__text{
+      left: 50%;
+      font-size: 2rem;
+      padding: 0 2rem;
+      width: 45%;
+      //  background-color: red;
+    }
+
+  }
+}
+
+
+.controls{
+  width: 50%;
+  margin: 0 auto;
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-between;
+  color: $text-color;
+}
+
+.show{
+  opacity: 1;
+}

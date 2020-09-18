@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"/>
-    <link rel="stylesheet" href="css/styles.css?t=1600208249029"/>
+    <link rel="stylesheet" href="css/styles.css?t=1600398660197"/>
     <title>Gallery</title>
   </head>
   <body>
@@ -24,7 +24,7 @@
     <div class="sidebar" id="sidebar">
       <nav class="main-menu" id="main-menu">
         <ul class="main-menu" id="main-menu">
-          <li class="main-menu__item"><a class="main-menu__link" href="/">home</a>
+          <li class="main-menu__item"><a class="main-menu__link main-menu__link--active" href="/">home</a>
           </li>
           <li class="main-menu__item"><a class="main-menu__link" href="/about.html">about</a>
           </li>
@@ -33,7 +33,27 @@
         </ul>
       </nav>
     </div>
-    <main class="main"></main>
+    <main class="main">
+      <h1 class="title">Home</h1>
+      <div class="gallery" id="gallery">
+        <div class="gallery__item"><img src="./images/cafe.jpg" alt="foto de una taza de cafe"/></div>
+        <div class="gallery__item"><img src="./images/cafe2.jpg" alt="foto de una taza de cafe"/></div>
+        <div class="gallery__item"><img src="./images/cafe3.jpg" alt="foto de una taza de cafe"/></div>
+        <div class="gallery__item"><img src="./images/mano.jpg" alt="foto de una mano agarrado tierra"/></div>
+        <div class="gallery__item"><img src="./images/cafe.jpg" alt="foto de una taza de cafe"/></div>
+        <div class="gallery__item"><img src="./images/cafe2.jpg" alt="foto de una taza de cafe"/></div>
+        <div class="gallery__item"><img src="./images/cafe3.jpg" alt="foto de una taza de cafe"/></div>
+        <div class="gallery__item"><img src="./images/mano.jpg" alt="foto de una mano agarrado tierra"/></div>
+        <div class="gallery__item"><img src="./images/cafe.jpg" alt="foto de una taza de cafe"/></div>
+        <div class="gallery__item"><img src="./images/cafe2.jpg" alt="foto de una taza de cafe"/></div>
+        <div class="gallery__item"><img src="./images/cafe3.jpg" alt="foto de una taza de cafe"/></div>
+        <div class="gallery__item"><img src="./images/mano.jpg" alt="foto de una mano agarrado tierra"/></div>
+        <div class="gallery__item"><img src="./images/cafe.jpg" alt="foto de una taza de cafe"/></div>
+        <div class="gallery__item"><img src="./images/cafe2.jpg" alt="foto de una taza de cafe"/></div>
+        <div class="gallery__item"><img src="./images/cafe3.jpg" alt="foto de una taza de cafe"/></div>
+        <div class="gallery__item"><img src="./images/mano.jpg" alt="foto de una mano agarrado tierra"/></div>
+      </div>
+    </main>
     <div class="lightbox" id="login-modal">
       <form class="form" id="login-form">
         <div class="form__field">
@@ -53,7 +73,7 @@
       <form class="form" id="register-form">
         <div class="form__field">
           <label class="form__label" for="register-name">Name</label>
-          <input class="form__input" type="name" name="name" id="register-email"/>
+          <input class="form__input" type="name" name="name" id="register-name"/>
         </div>
         <div class="form__field">
           <label class="form__label" for="register-email">Email</label>
@@ -72,7 +92,7 @@
         </div>
       </form>
     </div>
-    <script src="js/scripts-min.js?t=1600208249029"></script>
-    <footer></footer>
+    <script src="https://cdn.jsdelivr.net/npm/macy@2"></script>
+    <script src="js/scripts-min.js?t=1600398660197"></script>
   </body>
 </html>

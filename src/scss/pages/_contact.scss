@@ -1,0 +1,41 @@
+.contact{
+  background-color: $dark-color;
+  height: 110vh;
+  text-align: center;
+  // position relative por que vamos a poner iconos de redes sociales
+  position: relative;
+
+  @include laptop{
+    height: calc(100vh - 50px);
+    &__img-map{
+      display: none;
+    }
+  }
+
+  &__map{
+    width: 100%;
+    text-align: center;
+
+    @include laptop{
+      width: 50%;
+      margin: 0 auto 2rem;
+    }
+
+    & iframe{
+      display: none;
+      @include laptop{
+        display: block;
+        width: 320px;
+        height: 300px;
+        margin: 2rem auto;
+        width: 600px;
+      }
+    }
+  }
+
+  &__img-map{
+    width: 320px;
+    height: 200px;
+    margin-top: 2rem;
+  }
+}
